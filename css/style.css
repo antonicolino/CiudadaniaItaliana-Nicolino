@@ -120,7 +120,7 @@ nav ul li {
   margin: 0 79px;
 }
 
-nav ul li a :hover {
+nav ul li a:hover {
   color: black;
   font-weight: 600;
 }
@@ -129,6 +129,42 @@ nav ul li a {
   font-size: 2rem;
   text-decoration: none;
   color: rgb(0, 0, 0);
+}
+
+nav ul li a {
+  background-image: linear-gradient(
+    to right,
+    #4f963a 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:before{
+  content: '';
+  background: #4f963a;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+ background-position: 0;
+}
+
+nav ul li a:hover::before{
+  width: 100%;
 }
 
 .boton__accion {
@@ -219,10 +255,6 @@ nav ul li a {
   font-weight: bold;
 }
 
-.secciones__lista a:hover {
-  color: #4f963a;
-}
-
 .novedades__info {
   display: grid;
   grid-template-columns: auto auto;
@@ -298,6 +330,11 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   text-align: center;
+  transition: box-shadow .2s ease-in-out;
+}
+
+.card-precios:hover{
+  box-shadow: 0 0 80px lighten(#000, 60%);
 }
 
 .card-precios .info {
@@ -515,5 +552,3 @@ nav ul li a {
  padding: center;
  padding-left: 15%;
 } /*
-
-
