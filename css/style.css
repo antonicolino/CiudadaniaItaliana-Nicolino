@@ -115,23 +115,18 @@ nav ul {
   display: inline-block;
 }
 
-nav ul li {
+.secciones__lista li {
   display: inline-block;
   margin: 0 79px;
 }
 
-nav ul li a:hover {
-  color: black;
-  font-weight: 600;
-}
-
-nav ul li a {
+.secciones__lista li a {
   font-size: 2rem;
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
 
-nav ul li a {
+.secciones__lista li a {
   background-image: linear-gradient(
     to right,
     #4f963a 50%,
@@ -147,7 +142,7 @@ nav ul li a {
   transition: all 0.3s ease-in-out;
 }
 
-nav ul li a:before{
+.secciones__lista li a:before {
   content: '';
   background: #4f963a;
   display: block;
@@ -159,11 +154,11 @@ nav ul li a:before{
   transition: all 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
+.secciones__lista li a:hover, .secciones__lista li .active {
  background-position: 0;
 }
 
-nav ul li a:hover::before{
+.secciones__lista li a:hover::before, .secciones__lista li .active::before{
   width: 100%;
 }
 
@@ -310,6 +305,10 @@ nav ul li a:hover::before{
   margin-right: 10em;
 }
 
+.faq-title {
+  font-weight: 900;
+}
+
 .precios {
   display: flex;
   justify-content: space-around;
@@ -330,11 +329,11 @@ nav ul li a:hover::before{
   display: flex;
   flex-direction: column;
   text-align: center;
-  transition: box-shadow .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .card-precios:hover{
-  box-shadow: 0 0 80px lighten(#000, 60%);
+  transform: translateY(-3px) scale(1.05) translateZ(0);
 }
 
 .card-precios .info {
@@ -540,6 +539,15 @@ nav ul li a:hover::before{
   .card h2 {
     grid-area: 2 / 1 / 3 / 3;
   }
+}
+
+.boton__accion {
+  transition: all 0.15s ease-out;
+}
+
+.boton__accion:hover {
+  box-shadow: rgb(79, 150, 58) 0 1px 30px;
+  transform: scale(1.1); 
 }
 
 /*poner todas las ilustraciones en svg o webp*/
