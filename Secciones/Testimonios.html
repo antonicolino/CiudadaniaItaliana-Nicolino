@@ -8,7 +8,17 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="shortcut icon" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,8 +34,8 @@
         <a href="../index.html">
             <img src="../img/favicon.png" class="logo" alt="logo de asesoria para ciudadania italiana">
         </a>
-        <div class="secciones">
-            <ul class="secciones__lista ">
+        <div class="secciones d-flex">
+            <ul class="secciones__lista d-flex justify-content-around flex-wrap w-100">
                 <li><a href="../Secciones/Servicios.html">Servicios</a></li>
                 <li><a href="../Secciones/FAQ.html">FAQ</a></li>
                 <li><a class="active" href="../Secciones/Testimonios.html">Testimonios </a></li>
@@ -35,10 +45,10 @@
         </div>
     </nav>
     <main class="contenedor">
-        <h1 class="text-center">Testimonios</h1>
-        <div class="testimonios">
+        <h1 class="text-center display-3 mb-5">Testimonios</h1>
+        <div class="d-flex flex-column align-items-center">
             <div class="testimonio-card">
-                <div class="avatar-container">
+                <div class="avatar-container d-flex align-items-center">
                     <img class="avatar" src="../img/testimonios/testimonio1.jpg" alt="testimonio 1">
                     <h3>Luciana Gaittan</h3>
                 </div>
@@ -53,7 +63,7 @@
                 </p>
             </div>
             <div class="testimonio-card">
-                <div class="avatar-container">
+                <div class="avatar-container d-flex align-items-center">
                     <img class="avatar" src="../img/testimonios/testimonio2.jpg" alt="testimonio 2">
                     <h3>Esmeralda Monachesi</h3>
                 </div>
@@ -70,7 +80,7 @@
                 </p>
             </div>
             <div class="testimonio-card">
-                <div class="avatar-container">
+                <div class="avatar-container d-flex align-items-center">
                     <img class="avatar" src="../img/testimonios/testimonio3.jpg" alt="testimonio 3">
                     <h3>Juan Gabriel Repetto</h3>
                 </div>
@@ -88,7 +98,7 @@
                 </p>
             </div>
             <div class="testimonio-card">
-                <div class="avatar-container">
+                <div class="avatar-container d-flex align-items-center">
                     <img class="avatar" src="../img/testimonios/testimonio4.jpg" alt="testimonio 4">
                     <h3>Marcos Jubilla</h3>
                 </div>
@@ -112,7 +122,7 @@
                 </p>
             </div>
             <div class="testimonio-card">
-                <div class="avatar-container">
+                <div class="avatar-container d-flex align-items-center">
                     <img class="avatar" src="../img/testimonios/testimonio5.jpg" alt="testimonio 5">
                     <h3>Guido Muñoz</h3>
                 </div>
@@ -135,10 +145,10 @@
             </div>
         </div>
     </main>
-    <footer id="footer" class="contenedor">
-        <div class="redes">
+    <footer id="footer" class="d-flex flex-column justify-content-around">
+        <div class="container d-flex justify-content-end">
             <div class="redes__contenedor">
-                <h5>VISITANOS EN NUESTRAS REDES SOCIALES</h5>
+                <h5>VISITANOS EN<br>NUESTRAS REDES SOCIALES</h5>
                 <div>
                     <a href="https://instagram.com" target="_blank">
                         <img class="redes__logo" src="../img/instagram.svg" alt="instagram">

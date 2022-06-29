@@ -8,7 +8,17 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="shortcut icon" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,8 +34,8 @@
         <a href="../index.html">
             <img src="../img/favicon.png" class="logo" alt="logo de asesoria para ciudadania italiana">
         </a>
-        <div class="secciones">
-            <ul class="secciones__lista ">
+        <div class="secciones d-flex">
+            <ul class="secciones__lista d-flex justify-content-around flex-wrap w-100">
                 <li><a class="active" href="../Secciones/Servicios.html">Servicios</a></li>
                 <li><a href="../Secciones/FAQ.html">FAQ</a></li>
                 <li><a href="../Secciones/Testimonios.html">Testimonios </a></li>
@@ -34,10 +44,10 @@
             </ul>
         </div>
     </nav>
-    <main class="contenedor">
-        <h1 class="text-center"> Servicios en Argentina</h1>
-        <div class="precios">
-            <div class="card card-precios">
+    <main class="container contenedor">
+        <h1 class="text-center display-3">Servicios en Argentina</h1>
+        <div class="d-flex justify-content-around flex-wrap my-5">
+            <div class="card card-precios d-flex flex-column text-center">
                 <div class="img-container">
                     <img class="text-center"
                         src="https://ouch-cdn2.icons8.com/yJga14otHFznp8F2H925Cugj0s0mxgKJ1tHHbmJG3YU/rs:fit:596:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTAw/LzNkMjcwMWFjLTI2/ZjUtNGVhMS1iZjE3/LTc4YTJlZjgyMTUy/NC5zdmc.png"
@@ -52,7 +62,7 @@
                 </div>
                 <h2 class="precio">$7.500</h2>
             </div>
-            <div class="card card-precios">
+            <div class="card card-precios d-flex flex-column text-center">
                 <div class="img-container">
                     <img class="text-center"
                         src="https://ouch-cdn2.icons8.com/9lguGFVoL5yLw8kMC-YoziUQsOQYSToqojwmN2GFMHw/rs:fit:654:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNzEx/LzBlYzVhZTdjLWQ4/NjAtNDBlMy05Y2Qx/LWVhMDNlNmUxODMw/NS5zdmc.png"
@@ -67,7 +77,7 @@
                 </div>
                 <h2 class="precio">$10.500</h2>
             </div>
-            <div class="card card-precios">
+            <div class="card card-precios d-flex flex-column text-center">
                 <div class="img-container">
                     <img class="text-center"
                         src="https://ouch-cdn2.icons8.com/socc9sC71pPl8xJaFEis0QDDHp0-hJy7KpFyPkw1cq4/rs:fit:517:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvOTM3/L2Q1YmFlNDg0LTE0/YzctNGIxMC1hNTE1/LWFlOWY5ZjU5NGRh/Ni5zdmc.png"
@@ -81,7 +91,7 @@
                 </div>
                 <h2 class="precio">$15.000</h2>
             </div>
-            <div class="card card-precios">
+            <div class="card card-precios d-flex flex-column text-center">
                 <div class="img-container">
                     <img class="text-center"
                         src="https://ouch-cdn2.icons8.com/blbPxXDn_i9GiKkSuGBx9HAeawBa8a_1chOaMBYmsOs/rs:fit:1058:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTMw/LzU3ZTg2NmY4LTZh/OWQtNDJjYy05MDZi/LTVkNmQzMWQ1ODBl/ZS5zdmc.png"
@@ -97,9 +107,9 @@
                 <h2 class="precio">$19.000</h2>
             </div>
         </div>
-        <h1 class="text-center"> Servicios en Italia</h1>
-        <div class="precios">
-            <div class="card card-precios">
+        <h1 class="text-center display-3">Servicios en Italia</h1>
+        <div class="d-flex justify-content-around flex-wrap my-5">
+            <div class="card card-precios d-flex flex-column text-center">
                 <div class="img-container">
                     <img class="text-center"
                         src="https://ouch-cdn2.icons8.com/yJga14otHFznp8F2H925Cugj0s0mxgKJ1tHHbmJG3YU/rs:fit:596:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTAw/LzNkMjcwMWFjLTI2/ZjUtNGVhMS1iZjE3/LTc4YTJlZjgyMTUy/NC5zdmc.png"
@@ -114,7 +124,7 @@
                 </div>
                 <h2 class="precio">€950</h2>
             </div>
-            <div class="card card-precios">
+            <div class="card card-precios d-flex flex-column text-center">
                 <div class="img-container">
                     <img class="text-center"
                         src="https://ouch-cdn2.icons8.com/9lguGFVoL5yLw8kMC-YoziUQsOQYSToqojwmN2GFMHw/rs:fit:654:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNzEx/LzBlYzVhZTdjLWQ4/NjAtNDBlMy05Y2Qx/LWVhMDNlNmUxODMw/NS5zdmc.png"
@@ -129,7 +139,7 @@
                 </div>
                 <h2 class="precio">€850</h2>
             </div>
-            <div class="card card-precios">
+            <div class="card card-precios d-flex flex-column text-center">
                 <div class="img-container">
                     <img class="text-center"
                         src="https://ouch-cdn2.icons8.com/socc9sC71pPl8xJaFEis0QDDHp0-hJy7KpFyPkw1cq4/rs:fit:517:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvOTM3/L2Q1YmFlNDg0LTE0/YzctNGIxMC1hNTE1/LWFlOWY5ZjU5NGRh/Ni5zdmc.png"
@@ -144,7 +154,7 @@
                 </div>
                 <h2 class="precio">€750</h2>
             </div>
-            <div class="card card-precios">
+            <div class="card card-precios d-flex flex-column text-center">
                 <div class="img-container">
                     <img class="text-center"
                         src="https://ouch-cdn2.icons8.com/blbPxXDn_i9GiKkSuGBx9HAeawBa8a_1chOaMBYmsOs/rs:fit:1058:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTMw/LzU3ZTg2NmY4LTZh/OWQtNDJjYy05MDZi/LTVkNmQzMWQ1ODBl/ZS5zdmc.png"
@@ -166,10 +176,10 @@
             </button>
         </a>
     </div>
-    <footer id="footer" class="contenedor">
-        <div class="redes">
+    <footer id="footer" class="d-flex flex-column justify-content-around">
+        <div class="container d-flex justify-content-end">
             <div class="redes__contenedor">
-                <h5>VISITANOS EN <br> NUESTRAS REDES SOCIALES</h5>
+                <h5>VISITANOS EN<br>NUESTRAS REDES SOCIALES</h5>
                 <div>
                     <a href="https://instagram.com" target="_blank">
                         <img class="redes__logo" src="../img/instagram.svg" alt="instagram">

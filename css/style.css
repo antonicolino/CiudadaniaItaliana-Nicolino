@@ -35,9 +35,6 @@ body {
   color: black;
   background-color: #fce0a2;
   min-height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   padding-top: 20px;
   padding-bottom: 10px;
 }
@@ -179,10 +176,7 @@ nav ul {
 }
 
 .contenedor {
-  padding-right: 100px;
-  padding-left: 100px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-top: 50px;
 }
 
 .servicios {
@@ -209,11 +203,6 @@ nav ul {
   color: white;
 }
 
-.redes {
-  display: flex;
-  justify-content: end;
-}
-
 .redes__contenedor {
   width: fit-content;
   text-align: center;
@@ -235,15 +224,7 @@ nav ul {
 
 .secciones {
   padding-bottom: 30px;
-  display: flex;
   margin-top: 30px;
-}
-
-.secciones__lista {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  flex-wrap: wrap;
 }
 
 .secciones__lista a {
@@ -263,6 +244,7 @@ nav ul {
 .novedades__info__texto {
   display: grid;
   grid-template-rows: auto auto auto;
+  grid-gap: 3rem;
 }
 
 .subtitulo__contacto {
@@ -283,8 +265,8 @@ nav ul {
   background-color: #f3f3e7;
   color: #4f963a;
   padding: 5px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 4em;
+  padding-right: 4em;
   font-size: 18px;
   font-weight: 600;
   display: grid;
@@ -301,34 +283,23 @@ nav ul {
 
 .contenedor__faq__info p {
   margin-top: 1em;
-  margin-left: 10em;
-  margin-right: 10em;
 }
 
 .faq-title {
   font-weight: 900;
 }
 
-.precios {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
 .card {
   background: white;
-  border: 1px solid lightgray;
-  border-radius: 15px;
+  border: 1px solid lightgray !important;
+  border-radius: 15px !important;
   box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px, rgb(10 37 64 / 35%) 0px -2px 4px -2px inset;
   padding: 25px;
 }
 
 .card-precios {
-  width: 150px;
+  width: 220px;
   padding-top: 15px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   transition: all .2s ease-in-out;
 }
 
@@ -400,15 +371,7 @@ nav ul {
 }
 
 .avatar-container {
-  display: flex;
-  align-items: center;
   margin-bottom: 10px;
-}
-
-.testimonios {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .nosotros__size h1 {
@@ -494,7 +457,6 @@ nav ul {
     grid-gap: 5rem;
   }
 
-
   .novedades__info img {
     order: 1;
     max-width: 30rem;
@@ -549,14 +511,3 @@ nav ul {
   box-shadow: rgb(79, 150, 58) 0 1px 30px;
   transform: scale(1.1); 
 }
-
-/*poner todas las ilustraciones en svg o webp*/
-
-/*
-@media screen and  (max-width: 500px) {
-.contenedor__faq__info {
- width: 100% ;
- align-self: center;
- padding: center;
- padding-left: 15%;
-} /*

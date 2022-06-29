@@ -8,6 +8,17 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="shortcut icon" href="img/favicon.png" class="encabezado-img">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,8 +33,8 @@
         <a href="index.html">
             <img src="img/favicon.png" class="logo" alt="logo de asesoria para ciudadania italiana">
         </a>
-        <div class="secciones">
-            <ul class="secciones__lista">
+        <div class="secciones d-flex">
+            <ul class="secciones__lista d-flex justify-content-around flex-wrap w-100">
                 <li><a href="Secciones/Servicios.html">Servicios</a></li>
                 <li><a href="Secciones/FAQ.html">FAQ</a></li>
                 <li><a href="Secciones/Testimonios.html">Testimonios </a></li>
@@ -33,17 +44,17 @@
         </div>
     </nav>
 
-    <div class="contenedor">
-        <header>
-            <h1 class="text-center">¡Tu doble nacionalidad <br> te esta esperando!</h1>
-            <h5 class="text-center">
+    <div class="container contenedor">
+        <header class="mb-lg-5">
+            <h1 class="text-center display-3">¡Tu doble nacionalidad <br> te esta esperando!</h1>
+            <h4 class="text-center">
                 <i>
                     En asesoria Anto te estamos esperando para conseguir el sueño de ser italiano, de
                     reconstruir tu historia
                 </i>
-            </h5>
+            </h4>
         </header>
-        <section class="novedades__info">
+        <section class="novedades__info mb-5">
             <div class="novedades__info__texto">
                 <div>
                     <h4> Ciudadania Italiana en Argentina</h4>
@@ -79,7 +90,7 @@
             </div>
             <img src="img/carpeta.gif" alt="carpeta">
         </section>
-        <h1 class="text-center">NUESTROS SERVICIOS</h1>
+        <h1 class="text-center display-3">NUESTROS SERVICIOS</h1>
         <section class="servicios novedades__info">
             <img src="img/servicios.gif" alt="servicios">
             <div class="novedades__info__texto">
@@ -124,8 +135,8 @@
         </div>
     </div>
 
-    <footer id="footer" class="contenedor">
-        <div class="redes">
+    <footer id="footer" class="d-flex flex-column justify-content-around">
+        <div class="container d-flex justify-content-end">
             <div class="redes__contenedor">
                 <h5>VISITANOS EN<br>NUESTRAS REDES SOCIALES</h5>
                 <div>
