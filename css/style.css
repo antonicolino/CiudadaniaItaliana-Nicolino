@@ -7,28 +7,11 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 72.5%;
 }
 
 body {
   background-attachment: fixed;
-}
-
-.text-grey {
-  color: grey;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-  padding-right: 50px;
-  padding-left: 50px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: auto;
 }
 
 #footer {
@@ -84,20 +67,8 @@ p {
   font-weight: 100;
 }
 
-/* Para poner italica en css directamente: 
-font-style: italic;
-;*/
-
-/* Para las mayusculas:
- text-transform: uppercase;
-*/
-
 .icon {
   float: right;
-}
-
-.text-red {
-  color: red;
 }
 
 nav {
@@ -124,11 +95,9 @@ nav ul {
 }
 
 .secciones__lista li a {
-  background-image: linear-gradient(
-    to right,
-    #4f963a 50%,
-    #000 50%
-  );
+  background-image: linear-gradient(to right,
+      #4f963a 50%,
+      #000 50%);
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -151,11 +120,13 @@ nav ul {
   transition: all 0.3s ease-in-out;
 }
 
-.secciones__lista li a:hover, .secciones__lista li .active {
- background-position: 0;
+.secciones__lista li a:hover,
+.secciones__lista li .active {
+  background-position: 0;
 }
 
-.secciones__lista li a:hover::before, .secciones__lista li .active::before{
+.secciones__lista li a:hover::before,
+.secciones__lista li .active::before {
   width: 100%;
 }
 
@@ -173,6 +144,15 @@ nav ul {
   border: transparent;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border-radius: 30px;
+}
+
+.boton__accion {
+  transition: all 0.15s ease-out;
+}
+
+.boton__accion:hover {
+  box-shadow: rgb(79, 150, 58) 0 1px 30px;
+  transform: scale(1.1);
 }
 
 .contenedor {
@@ -290,7 +270,6 @@ nav ul {
 }
 
 .card {
-  background: white;
   border: 1px solid lightgray !important;
   border-radius: 15px !important;
   box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px, rgb(10 37 64 / 35%) 0px -2px 4px -2px inset;
@@ -303,8 +282,9 @@ nav ul {
   transition: all .2s ease-in-out;
 }
 
-.card-precios:hover{
+.card-precios:hover {
   transform: translateY(-3px) scale(1.05) translateZ(0);
+  background: #6edb000a;
 }
 
 .card-precios .info {
@@ -352,12 +332,6 @@ nav ul {
 }
 
 .testimonio-card {
-  background: white;
-  border: 1px solid lightgray;
-  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px, rgb(10 37 64 / 35%) 0px -2px 4px -2px inset;
-  border-radius: 15px;
-  padding: 20px;
-  margin-bottom: 35px;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -370,25 +344,12 @@ nav ul {
   margin-right: 15px;
 }
 
-.avatar-container {
-  margin-bottom: 10px;
-}
-
 .nosotros__size h1 {
   font-size: 4em;
 }
 
-.input-box {
-  margin-bottom: 30px;
-}
-
 .input-box h4 {
   margin-bottom: 20px;
-}
-
-.contacto__botones {
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 .contacto__botones button {
@@ -503,11 +464,10 @@ nav ul {
   }
 }
 
-.boton__accion {
-  transition: all 0.15s ease-out;
+.btn-success {
+  background-color: rgb(79, 150, 58) !important;
 }
 
-.boton__accion:hover {
-  box-shadow: rgb(79, 150, 58) 0 1px 30px;
-  transform: scale(1.1); 
+.btn-success:hover {
+  background-color: rgb(61, 114, 45) !important;
 }

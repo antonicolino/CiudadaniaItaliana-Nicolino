@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title> Asesoria Anto para Ciudadania Italiana</title>
+    <title>Asesoria Anto para Ciudadanía Italiana</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="shortcut icon" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
@@ -22,13 +22,11 @@
 </head>
 
 <body>
-    <section>
-        <div class="encabezado__telefono text-center">
-            <a class="encabezado__link" href="https://wa.me/5493571326305" target="_blank">
-                Contacto directo al +540123456789
-            </a>
-        </div>
-    </section>
+    <div class="encabezado__telefono text-center">
+        <a class="encabezado__link" href="https://wa.me/5493571326305" target="_blank">
+            Contacto directo al +5493571326305
+        </a>
+    </div>
     <nav>
         <a href="../index.html">
             <img src="../img/favicon.png" class="logo" alt="logo de asesoria para ciudadania italiana">
@@ -50,17 +48,20 @@
                 <h3 class="subtitulo__contacto">¡Tu doble nacionalidad te esta esperando!</h3>
             </header>
             <section>
-                <div class="card input-box">
-                    <h4>Datos personales</h4>
-                    <h5><label for="name">Nombre</label>
-                        <input class="form-control" type="text" id="name" placeholder="Antonella Nicolino">
-                    </h5>
-                    <h5><label for="email">Email</label>
-                        <input class="form-control" type="email" id="email" placeholder="mail@algo.com">
-                    </h5>
+                <div class="card mb-5">
+                    <h4 class="mb-4">Datos personales</h4>
+                    <div class="row">
+                        <h5 class="col-md-6 col-12 mb-4 mb-md-0">
+                            <label for="name">Nombre</label>
+                            <input class="form-control" type="text" id="name" placeholder="Antonella Nicolino">
+                        </h5>
+                        <h5 class="col-md-6 col-12"><label for="email">Email</label>
+                            <input class="form-control" type="email" id="email" placeholder="mail@algo.com">
+                        </h5>
+                    </div>
                 </div>
-                <div class="card input-box">
-                    <h4>¿Qué necesitas?</h4>
+                <div class="card mb-5">
+                    <h4 class="mb-4">¿Qué necesitas?</h4>
                     <div class="form-check-inline">
                         <input class="form-check-input" type="checkbox" id="Consulta" name="necesidad" value="Consulta">
                         <label class="form-check-label mr-3" for="Consulta">Consulta personalizada</label>
@@ -75,29 +76,37 @@
                             Italia</label>
                     </div>
                 </div>
-                <div class="card input-box">
-                    <h4>¿Cómo será el trámite?</h4>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input mt-1" type="radio" name="á" id="Descendiente por via paterna"
-                            value="Descendiente por via paterna">
-                        <label class="form-check-label mr-3" for="Descendiente por via paterna ">Descendiente por via
-                            paterna</label>
-
-                        <input class="form-check-input mt-1" type="radio" name="tramite" id=" Juicio por via materna"
-                            value="materna">
-                        <label class="form-check-label mr-3" for="Juicio por via materna">Juicio por via materna</label>
-
-                        <input class="form-check-input mt-1" type="radio" name="tramite" id=" Tramite por matrimonio"
-                            value="matrimonio">
-                        <label class="form-check-label" for="Tramite por matrimonio">Tramite por matrimonio</label>
+                <div class="card mb-5">
+                    <h4 class="mb-4">¿Cómo será el trámite?</h4>
+                    <div class="form-check form-check-inline d-flex align-items-center">
+                        <span>
+                            <input class="form-check-input mt-1" type="radio" name="tramite" id="Descendiente por via paterna"
+                                value="Descendiente por via paterna">
+                            <label class="form-check-label mr-3" for="Descendiente por via paterna">
+                                Descendiente por via paterna
+                            </label>
+                        </span>
+                        <span>
+                            <input class="form-check-input mt-1" type="radio" name="tramite"
+                                id="Juicio por via materna" value="materna">
+                            <label class="form-check-label mr-3" for="Juicio por via materna">
+                                Juicio por via materna
+                            </label>
+                        </span>
+                        <span>
+                            <input class="form-check-input mt-1" type="radio" name="tramite"
+                                id="Tramite por matrimonio" value="matrimonio">
+                            <label class="form-check-label" for="Tramite por matrimonio">Trámite por matrimonio</label>
+                        </span>
                     </div>
                 </div>
-                <div class="card input-box">
-                    <h4>¿Dónde harás el trámite?</h4>
+                <div class="card mb-5">
+                    <h4 class="mb-4">¿Dónde harás el trámite?</h4>
                     <div>
-                        <div class="form-check mb-2">
-                            <input class="form-check-input mt-1" type="radio" name="lugar" id=" Tramite en Argnentina" value="Argentina">
-                            <label class="form-check-label ml-2" for="Tramite en Argentina"> Trámite en Argentina</label>
+                        <div class="mb-2 d-flex align-items-center">
+                            <input type="radio" name="lugar" id="Tramite en Argentina" value="Argentina">
+                            <label class="form-check-label ml-2" for="Tramite en Argentina"> Trámite en
+                                Argentina</label>
                         </div>
                         <select class="form-control mb-3" name="provincia-argentina" id="desde">
                             <option value=""></option>
@@ -126,8 +135,8 @@
                             <option value="tucuman">Tucumán</option>
                         </select>
 
-                        <div class="form-check mb-2">
-                            <input class="form-check-input" type="radio" name="lugar" id="Tramite en Italia" value="Italia">
+                        <div class="mb-2 d-flex align-items-center">
+                            <input type="radio" name="lugar" id="Tramite en Italia" value="Italia">
                             <label class="form-check-label ml-2" for="Tramite en Italia"> Trámite en Italia</label>
                         </div>
                         <select class="form-control" name="Region Italia" id="desde">
@@ -157,16 +166,16 @@
                 </div>
                 <div class="mb-5">
                     <div>
-                        <h4><label for="mensaje">Mensaje</label></h4>
+                        <h4 class="mb-4"><label for="mensaje">Mensaje</label></h4>
                         <textarea class="form-control" name="mensaje" id="mensaje" cols="90" rows="9"></textarea>
                     </div>
-                    <div class="contacto__botones mb-5">
-                        <button class="contacto__botones__cancelar" type="reset">Cancelar</button>
-                        <button class="contacto__botones__enviar" type="submit">Enviar</button>
+                    <div class="contacto__botones mb-5 mt-3">
+                        <button class="btn btn-danger btn-lg mr-3" type="reset">Cancelar</button>
+                        <button class="btn btn-success btn-lg" type="submit">Enviar</button>
                     </div>
-                    <iframe
+                    <iframe class="rounded shadow"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22709.22360073003!2d7.472610367191222!3d44.645009662371116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cd491cbe446e01%3A0xe8a54a78177829da!2s12037%20Saluzzo%2C%20Cuneo%2C%20Italia!5e0!3m2!1ses-419!2sar!4v1653534951706!5m2!1ses-419!2sar"
-                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
         </form>
