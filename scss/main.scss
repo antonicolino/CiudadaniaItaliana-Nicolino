@@ -1,0 +1,146 @@
+@import "_vars";
+@import "_fonts";
+@import "_nav";
+@import "_footer";
+
+.contenedor {
+    margin-top: 50px;
+}
+
+.card {
+    border: 1px solid lightgray !important;
+    border-radius: 15px !important;
+    box-shadow: #0000001a 0px 4px 12px, #0a254059 0px -2px 4px -2px inset;
+    padding: 25px;
+}
+
+.encabezado__telefono {
+    background-color: $green;
+    color: white;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.encabezado__link {
+    text-decoration: none;
+    color: white;
+}
+
+.boton__accion {
+    background-color: $greenButton;
+    color: white;
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    border: transparent;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    transition: all 0.15s ease-out;
+
+    &:hover {
+        box-shadow: $greenButton 0 1px 30px;
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (min-width: $break-sm) and (max-width: $break-lg) {
+    .card {
+        display: grid;
+        width: auto;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+
+        .img-container {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .info {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+
+        h2 {
+            grid-area: 2 / 1 / 3 / 3;
+        }
+    }
+
+}
+
+.card-precios {
+    width: 220px;
+    padding-top: 15px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-3px) scale(1.05) translateZ(0);
+        background: #6edb000a;
+    }
+
+    .info {
+        flex-grow: 1;
+
+        h2 {
+            font-weight: 900;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            li {
+                border-top: 1px solid #e1f1ff;
+                font-size: 14px;
+                line-height: 1.5;
+                padding: 15px 0;
+                font-weight: 600;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .img-container {
+        padding-top: 15px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            height: auto;
+            width: 100%;
+            max-width: 120px;
+            align-self: center;
+        }
+    }
+
+    .precio {
+        padding-top: 15px;
+        margin-top: 20px;
+        border-top: 3px solid #4f963a;
+        font-weight: 900;
+    }
+}
+
+@media only screen and (max-width: $break-sm) {
+    .card {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: $break-lg) {
+    .card-precios {
+        width: 100%;
+        margin-bottom: 3em;
+    }
+}

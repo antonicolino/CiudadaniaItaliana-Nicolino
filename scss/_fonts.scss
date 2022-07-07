@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700&family=Nunito:ital,wght@0,700;0,900;1,900&display=swap");
+
+$mainFont: "Nunito", sans-serif;
+$secondaryFont: "Inter", sans-serif;
+
+* {
+    font-family: $secondaryFont;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 72.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+nav ul li a {
+    font-family: $mainFont;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    color: rgb(22, 80, 22);
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2.25rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    font-family: $secondaryFont;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: rgb(31, 29, 29);
+    font-weight: 100;
+}

@@ -1,0 +1,105 @@
+@import "_vars";
+@import "_fonts";
+
+nav {
+    background-color: rgba(145, 140, 140, 0.411);
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+
+    ul {
+        list-style: none;
+        display: inline-block;
+
+        li {
+            a {
+                font-family: $mainFont;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $break-sm) {
+    nav {
+        ul {
+            li {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .secciones__lista {
+        display: grid;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: $break-xl) {
+    nav {
+        ul {
+            li {
+                display: inline-block;
+                margin: unset;
+            }
+        }
+    }
+}
+
+.secciones {
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+.secciones__lista {
+    a {
+        font-weight: bold;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 79px;
+
+        a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: black;
+            background-image: linear-gradient(to right, #4f963a 50%, black 50%);
+            background-size: 200% 100%;
+            background-position: -100%;
+            display: inline-block;
+            padding: 5px 0;
+            position: relative;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.3s ease-in-out;
+
+            &:before {
+                content: '';
+                background: #4f963a;
+                display: block;
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 0;
+                height: 3px;
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover {
+                background-position: 0;
+
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .active {
+            background-position: 0;
+
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+}

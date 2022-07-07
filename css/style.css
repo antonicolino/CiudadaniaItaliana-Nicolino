@@ -2,6 +2,7 @@
 
 * {
   font-family: "Inter", sans-serif;
+  /* secondaryFont */
   padding: 0;
   margin: 0;
 }
@@ -14,14 +15,6 @@ body {
   background-attachment: fixed;
 }
 
-#footer {
-  color: black;
-  background-color: #fce0a2;
-  min-height: 150px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
 h1,
 h2,
 h3,
@@ -29,6 +22,7 @@ h4,
 h5,
 nav ul li a {
   font-family: "Nunito", sans-serif;
+  /* mainFont */
 }
 
 h1 {
@@ -61,6 +55,7 @@ h6 {
 
 p {
   font-family: "Inter", sans-serif;
+  /* secondaryFont */
   font-size: 2rem;
   line-height: 2.5rem;
   color: rgb(31, 29, 29);
@@ -83,6 +78,15 @@ nav ul {
   display: inline-block;
 }
 
+.secciones {
+  padding-bottom: 30px;
+  margin-top: 30px;
+}
+
+.secciones__lista a {
+  font-weight: bold;
+}
+
 .secciones__lista li {
   display: inline-block;
   margin: 0 79px;
@@ -91,13 +95,14 @@ nav ul {
 .secciones__lista li a {
   font-size: 2rem;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: black;
 }
 
 .secciones__lista li a {
   background-image: linear-gradient(to right,
       #4f963a 50%,
-      #000 50%);
+      black 50%);
+  /* var: green */
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -111,6 +116,7 @@ nav ul {
 .secciones__lista li a:before {
   content: '';
   background: #4f963a;
+  /* var: green */
   display: block;
   position: absolute;
   bottom: -3px;
@@ -132,6 +138,7 @@ nav ul {
 
 .boton__accion {
   background-color: rgb(79, 150, 58);
+  /* greenButton */
   color: white;
   padding: 20px;
   padding-left: 25px;
@@ -144,14 +151,12 @@ nav ul {
   border: transparent;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-}
-
-.boton__accion {
   transition: all 0.15s ease-out;
 }
 
 .boton__accion:hover {
   box-shadow: rgb(79, 150, 58) 0 1px 30px;
+  /* greenButton */
   transform: scale(1.1);
 }
 
@@ -170,6 +175,7 @@ nav ul {
 
 .encabezado__telefono {
   background-color: #4f963a;
+  /* var: green */
   color: white;
   padding: 5px;
   padding-left: 8px;
@@ -183,15 +189,6 @@ nav ul {
   color: white;
 }
 
-.redes__contenedor {
-  width: fit-content;
-  text-align: center;
-}
-
-.redes__logo {
-  height: 72px;
-}
-
 .logo {
   border-radius: 28px;
   margin-left: 52px;
@@ -200,15 +197,6 @@ nav ul {
   height: 100%;
   width: auto;
   max-height: 129px;
-}
-
-.secciones {
-  padding-bottom: 30px;
-  margin-top: 30px;
-}
-
-.secciones__lista a {
-  font-weight: bold;
 }
 
 .novedades__info {
@@ -229,6 +217,7 @@ nav ul {
 
 .subtitulo__contacto {
   color: #4f963a;
+  /* var: green */
   margin-bottom: 25px;
 }
 
@@ -244,6 +233,7 @@ nav ul {
 .contenedor__faq__info {
   background-color: #f3f3e7;
   color: #4f963a;
+  /* var: green */
   padding: 5px;
   padding-left: 4em;
   padding-right: 4em;
@@ -274,61 +264,6 @@ nav ul {
   border-radius: 15px !important;
   box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px, rgb(10 37 64 / 35%) 0px -2px 4px -2px inset;
   padding: 25px;
-}
-
-.card-precios {
-  width: 220px;
-  padding-top: 15px;
-  transition: all .2s ease-in-out;
-}
-
-.card-precios:hover {
-  transform: translateY(-3px) scale(1.05) translateZ(0);
-  background: #6edb000a;
-}
-
-.card-precios .info {
-  flex-grow: 1;
-}
-
-.card-precios ul {
-  list-style: none;
-}
-
-.card-precios .info h2 {
-  font-weight: 900;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.card-precios .info ul li {
-  border-top: 1px solid #e1f1ff;
-  font-size: 14px;
-  line-height: 1.5;
-  padding: 15px 0;
-  font-weight: 600;
-}
-
-.card-precios .img-container {
-  padding-top: 15px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-precios .img-container img {
-  height: auto;
-  width: 100%;
-  max-width: 120px;
-  align-self: center;
-}
-
-.card-precios .precio {
-  padding-top: 15px;
-  margin-top: 20px;
-  border-top: 3px solid #4f963a;
-  font-weight: 900;
 }
 
 .testimonio-card {
@@ -384,14 +319,9 @@ nav ul {
     margin-bottom: 5px;
   }
 
-  .redes {
-    justify-content: center;
-  }
-
   .card {
     width: auto;
   }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -464,8 +394,26 @@ nav ul {
   }
 }
 
+#footer {
+  color: black;
+  background-color: #fce0a2;
+  min-height: 150px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.redes__contenedor {
+  width: fit-content;
+  text-align: center;
+}
+
+.redes__logo {
+  height: 72px;
+}
+
 .btn-success {
   background-color: rgb(79, 150, 58) !important;
+  /* greenButton */
 }
 
 .btn-success:hover {
