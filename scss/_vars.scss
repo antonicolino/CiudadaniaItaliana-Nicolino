@@ -1,9 +1,11 @@
-/* BREAKPOINTS */
-$break-sm: 576px;
-$break-md: 768px;
-$break-lg: 992px;
-$break-xl: 1200px;
-$break-xxl: 1400px;
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
 
 /* COLORS */
 $green: #4f963a;
