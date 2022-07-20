@@ -25,7 +25,7 @@ nav ul li a {
 h1 {
     font-size: 6rem;
     font-weight: 900;
-    color: rgb(22, 80, 22);
+    color: $dark-green;
     margin-top: 60px;
     margin-bottom: 10px;
 }
@@ -54,6 +54,6 @@ p {
     font-family: $secondaryFont;
     font-size: 2rem;
     line-height: 2.5rem;
-    color: rgb(31, 29, 29);
+    color: $black-text;
     font-weight: 100;
 }

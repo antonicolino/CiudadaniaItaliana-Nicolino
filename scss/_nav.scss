@@ -3,7 +3,6 @@
 @import "_fonts";
 
 nav {
-    background-color: rgba(145, 140, 140, 0.411);
     background-image: url(../img/header.jpg);
     background-size: cover;
     background-position: center;
@@ -63,8 +62,8 @@ nav {
         a {
             font-size: 2rem;
             text-decoration: none;
-            color: black;
-            background-image: linear-gradient(to right, #4f963a 50%, black 50%);
+            color: $black-text;
+            background-image: linear-gradient(to right, $green 50%, black 50%);
             background-size: 200% 100%;
             background-position: -100%;
             display: inline-block;
@@ -76,7 +75,7 @@ nav {
 
             &:before {
                 content: '';
-                background: #4f963a;
+                background: $green;
                 display: block;
                 position: absolute;
                 bottom: -3px;
