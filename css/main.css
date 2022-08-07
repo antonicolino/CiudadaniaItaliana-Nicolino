@@ -105,8 +105,15 @@ nav {
       font-family: "Nunito", sans-serif; }
 
 @media only screen and (max-width: 576px) {
-  nav ul li {
-    margin-bottom: 5px; }
+  nav {
+    background: #f3f3e7; }
+    nav ul li {
+      margin-bottom: 5px; }
+    nav a {
+      display: flex;
+      justify-content: center; }
+      nav a img {
+        margin-left: 0px !important; }
   .secciones__lista {
     display: grid;
     text-align: center; } }

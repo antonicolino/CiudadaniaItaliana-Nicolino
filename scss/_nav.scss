@@ -21,9 +21,17 @@ nav {
 
 @include phone {
     nav {
+        background: #f3f3e7;
         ul {
             li {
                 margin-bottom: 5px;
+            }
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            img {
+                margin-left: 0px !important;
             }
         }
     }
